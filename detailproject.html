@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="asset/main.css">
     <script src="asset/index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 
 <body class="gray">
@@ -25,37 +26,31 @@
         </div>
     </nav>
    <div class="detail-page">
-    <h1 style="text-align: center;">project 1 membuat aplikasi dengan react js</h1>
+    <h1 style="text-align: center;" id="title"></h1>
     <div class="head-detail">
-    <img src="asset/image.jpg" class="head-detail-image" alt="">
+    <img src="asset/image.jpg" class="head-detail-image" id="image" alt="">
     <div style="display: flex;flex-direction: column;">
         <div class="head-detail-duration">
         <h3 style="margin-top: 0px;">Duration</h3>
-        <p><i class="ri-calculator-fill"></i> 17 desember 2021 - 3 april 2022</p>
-        <p><i class="ri-time-line"></i> 5 month</p>
+        <p ><i class="ri-calculator-fill"></i> <span id="date"></span></p>
+        <p><i class="ri-time-line"></i> <span id="duration"></span></p>
         </div>
         <div>
             <h3>Tecnologi</h3>
-            <div class="head-detail-item">
+            <div class="head-detail-item" id="teknologi">
+             <!-- <p><i class="ri-reactjs-line"></i> React</p>
              <p><i class="ri-reactjs-line"></i> React</p>
              <p><i class="ri-reactjs-line"></i> React</p>
              <p><i class="ri-reactjs-line"></i> React</p>
-             <p><i class="ri-reactjs-line"></i> React</p>
-             <p><i class="ri-reactjs-line"></i> React</p>
+             <p><i class="ri-reactjs-line"></i> React</p> -->
             </div> 
         </div>
     </div>
     </div>
-    <div class="detail-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non diam a metus feugiat fringilla sit amet at orci. Duis nec enim sit amet nisi varius pretium a vel dolor. Suspendisse mi odio, faucibus ac nunc a, blandit ultrices nulla. Proin et mi ut turpis tristique consectetur ut luctus leo. Curabitur feugiat erat et convallis eleifend. Etiam aliquet est id leo volutpat euismod. Nullam consectetur est id tortor rutrum, eget imperdiet magna vulputate.
-
-        Proin mattis ullamcorper sem, ut fringilla enim interdum vel. Fusce id augue non est pellentesque bibendum at ut elit. Nunc nibh risus, aliquet eu felis maximus, eleifend tincidunt urna. Integer finibus nec enim quis efficitur. Vestibulum pulvinar ornare dolor eget molestie. Mauris vulputate lacus ultricies, euismod justo eget, porttitor ipsum. Donec blandit suscipit ante nec consequat. Donec non velit luctus, maximus erat ut, tempus sem. Nulla volutpat ligula nisl, ac auctor sapien pharetra in.
-        
-        Morbi eget malesuada enim. Nam quis aliquet ipsum. Mauris feugiat massa diam, eget porta felis sollicitudin id. Aliquam in dapibus urna, eget molestie magna. Aenean scelerisque sollicitudin tellus eu dapibus. Sed volutpat nulla eget eros dignissim mattis. Phasellus tincidunt diam eget egestas interdum. Donec nisl tortor, iaculis at purus ac, sagittis varius risus. Mauris bibendum lorem in volutpat suscipit. Aliquam in fermentum massa.
-        
-        Nunc pellentesque neque id erat elementum semper. Pellentesque ornare a sapien vel tincidunt. Pellentesque ut mauris elit. Praesent ac neque neque. Vivamus sagittis, urna sed molestie suscipit, lacus elit cursus risus, imperdiet dapibus dolor diam non dui. Etiam in ex velit. Praesent ac bibendum libero, at tempor elit. Suspendisse dapibus, massa consequat fermentum lacinia, erat turpis hendrerit nulla, non sollicitudin lacus quam ullamcorper nibh. Quisque elit nibh, vehicula non maximus at, tristique ac diam. Nam gravida dictum eros ut auctor. Sed consequat erat quis posuere sagittis. Praesent et ligula quis sapien ultricies interdum vitae in ex. Integer et ipsum elit. Sed non molestie ante. 
+    <div class="detail-content" id="content">
     </div>
    </div>
+   <script>renderPageDetail()</script>
 </body>
 
 </html>
